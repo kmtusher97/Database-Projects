@@ -1,0 +1,44 @@
+<html>
+<head>
+ <title>Input for Items table</title>
+      
+       <style type="text/css">
+
+         label 
+           { float       : left;
+             width       : 6em;
+             text-align  : right;
+             margin-right: 10px;
+            }
+
+         .submit {margin-left: 8em;}
+
+       </style>
+
+</head>
+
+<body>
+
+	<form action="items_serverSide_input.php" method="post">
+	<p>Input to ITEMS table:</p>
+	<p>
+	<label class="item" for="First Name"> Item NAME: </label>
+	<input type="text" name="itemname" id="Item NAME" size="35" maxlength="35">
+        </p>
+	<p>
+	<label class="item" for="Last Name"> Item PRICE: </label>
+	<input type="text" name="itemprice" id="Item PRICE" size="35" maxlength="35">
+        </p>
+
+        <p class="submit">
+        <input type="submit" value="SEND">
+        <input type="reset" value="CLEAR">
+        </p>
+</form>
+
+
+</body>
+
+</html>
+
+
