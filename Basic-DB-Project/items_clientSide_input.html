@@ -1,42 +1,41 @@
 <html>
 <head>
- <title>Input for Items table</title>
-      
-       <style type="text/css">
+    <title>Input for Items table</title>
 
-         label 
-           { float       : left;
-             width       : 6em;
-             text-align  : right;
-             margin-right: 10px;
-            }
+    <style type="text/css">
+        label 
+        { 
+            float       : left;
+            width       : 6em;
+            text-align  : right;
+            margin-right: 10px;
+        }
 
-         .submit {margin-left: 8em;}
+        .submit {margin-left: 8em;}
 
-       </style>
+    </style>
 
 </head>
 
 <body>
+    <div>
+        <form action="items_serverSide_input.php" method="post">
+            <p>Input to ITEMS table:</p>
+            <p>
+                <label class="item" for="Item NAME"> Item NAME: </label>
+                <input type="text" name="itemname" id="Item NAME" size="35" maxlength="35">
+            </p>
+            <p>
+                <label class="item" for="Item PRICE"> Item PRICE: </label>
+                <input type="text" name="itemprice" id="Item PRICE" size="35" maxlength="35">
+            </p>
 
-	<form action="items_serverSide_input.php" method="post">
-	<p>Input to ITEMS table:</p>
-	<p>
-	<label class="item" for="First Name"> Item NAME: </label>
-	<input type="text" name="itemname" id="Item NAME" size="35" maxlength="35">
-        </p>
-	<p>
-	<label class="item" for="Last Name"> Item PRICE: </label>
-	<input type="text" name="itemprice" id="Item PRICE" size="35" maxlength="35">
-        </p>
-
-        <p class="submit">
-        <input type="submit" value="SEND">
-        <input type="reset" value="CLEAR">
-        </p>
-</form>
-
-
+            <p class="submit">
+                <input type="submit" value="SEND">
+                <input type="reset" value="CLEAR">
+            </p>
+        </form>
+    </div>
 </body>
 
 </html>
